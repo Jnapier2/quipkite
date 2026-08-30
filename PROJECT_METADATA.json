@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "canonicalProjectName": "QuipKite",
-  "repositoryRole": "Public portfolio showcase",
+  "repositoryRole": "Public product showcase",
   "publicBuild": {
     "version": "0.23.1-launch-stability-rc2",
     "buildId": "quipkite-0.23.1-launch-stability-20260827-2",

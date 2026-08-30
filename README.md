@@ -39,7 +39,7 @@ The browser-playable ZIP is identified by SHA-256 `3f9fedf09ff68a01b89811bc13aab
 
 This is a simulated Solo prototype, not a live social or dating service. It has no real-person matchmaking, public chat, production accounts, payments, or automatic product telemetry. Local preview state is not evidence of an online account or durable cloud record.
 
-This repository is a recruiter-facing product and verification showcase. Proprietary game source, production plans, moderation operations, internal evidence, credentials, and unpublished builds are intentionally excluded.
+This repository is a public product and verification overview. Proprietary game source, production plans, moderation operations, internal evidence, credentials, and unpublished builds are intentionally excluded.
 
 ## Rights and disclosure
 
