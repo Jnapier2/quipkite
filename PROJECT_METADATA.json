@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "canonicalProjectName": "QuipKite",
+  "repositoryRole": "Public portfolio showcase",
+  "publicBuild": {
+    "version": "0.23.1-launch-stability-rc2",
+    "buildId": "quipkite-0.23.1-launch-stability-20260827-2",
+    "playUrl": "https://zappytap.itch.io/quipkite-simulated-solo-preview",
+    "playerZipSha256": "3f9fedf09ff68a01b89811bc13aab7d10248b89a81ecb48c2da0de34493d3f9d"
+  },
+  "verification": {
+    "automatedTestsPassed": 182,
+    "automatedTestsFailed": 0,
+    "managedFilesVerified": 159,
+    "publicFlightPicksCompleted": 15,
+    "verifiedDate": "2026-08-27"
+  },
+  "publicBoundary": {
+    "simulatedSolo": true,
+    "realPersonConnected": false,
+    "liveMatchmaking": false,
+    "productionAccounts": false,
+    "payments": false,
+    "automaticProductTelemetry": false,
+    "proprietarySourceIncluded": false
+  },
+  "showcaseAsset": {
+    "path": "assets/quipkite-simulated-solo-preview.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "3afd883d3931d40bf24c6376e3a9bd3c09218c5a4eeaf6e20af39bebe0dba738",
+    "disclosure": "AI-assisted from creator-owned QuipKite artwork and reviewed for this project"
+  },
+  "copyright": "Copyright © 2026 Gateway Information Group LLC. All rights reserved."
+}
