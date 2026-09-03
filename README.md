@@ -13,10 +13,11 @@ QuipKite is an adults-only, short-form word game that turns small reactive choic
 ## What the preview demonstrates
 
 - **A gentler opening:** Curated word choices replace the pressure of writing a perfect first message.
-- **Momentum without a speed advantage:** A visible turn timer keeps the story moving; when time expires, the Kite Gust supplies a clearly attributed wildcard.
+- **A focused Play Dock:** The active conversation stays centered, the transcript scrolls independently, and reaction choices remain within reach at the bottom on desktop and mobile layouts.
 - **Choice-driven storytelling:** Each selection changes the next hand and the eventual landing, creating a compact story that can be saved as a postcard.
+- **Shared moments without public chat:** Kite Knot reveals a Twin Spark or Crosswind Pair, Bridge Words bring earlier choices back into the story, and reversible depth settings let the tone deepen without locking the player in.
 - **Private decisions stay separate:** Players can rate the experience privately and make an independent friendship choice without implying contact or relationship consent.
-- **Progress worth returning to:** Completed flights award progress, Sky Passport stamps, and keepsakes without paid boosts or streak-pressure mechanics.
+- **Progress worth returning to:** Completed flights award progress, private Landing Stamps, and keepsakes without paid boosts or streak-pressure mechanics.
 - **Resilient local play:** Pause and resume, keyboard controls, recoverable saves, restricted-storage guidance, and responsive layouts keep the preview usable across common browser conditions.
 
 ## Product insight
@@ -25,15 +26,15 @@ Free-text chat creates both creative pressure and safety complexity. QuipKite te
 
 ## Verification snapshot
 
-The public build is `0.23.1-launch-stability-rc2` (`quipkite-0.23.1-launch-stability-20260827-2`). Its release qualification recorded:
+The public build is `0.26.1-play-dock-rc1` (`quipkite-0.26.1-play-dock-20260902-1`). Its release qualification recorded:
 
-- 182 automated tests passed with zero failures or skips.
-- 159 managed-file hashes agreed across package identity checks.
+- 243 automated tests and 34 focused authority tests passed.
+- 232 managed-file hashes agreed across package identity checks.
 - 3,000 decks, 12,000 choices, and 138 reviewed words passed content validation.
-- A complete public 15-pick flight verified branching, rewards, a private rating, the simulated friendship ending, postcard creation, and reload persistence.
-- Desktop and 390-pixel mobile browser checks found no measured horizontal overflow in the tested paths.
+- TypeScript, ESLint, the five-stage production build, performance budgets, and the production dependency audit passed with zero reported vulnerabilities.
+- Four fresh-extraction browser checks at 390×844 and 1280×800 verified the centered conversation, independent transcript, bottom-docked choices, package-local privacy navigation, and no measured horizontal overflow.
 
-The browser-playable ZIP is identified by SHA-256 `3f9fedf09ff68a01b89811bc13aab7d10248b89a81ecb48c2da0de34493d3f9d`. Physical-device coverage, Safari and Firefox, formal screen-reader testing, installed-PWA updates, and antivirus reputation were not certified by that release.
+The 59-entry browser-playable ZIP is identified by SHA-256 `EAFC51E923D25DD0AE88A42A6933A37DA67F7CE7D198695578E78AC3A38B3A75`. The exact package is public as itch.io upload `19076369`; the prior `0.26.0` upload remains retained as rollback. Physical iOS or Android hardware, Safari and Firefox, formal screen-reader testing, installed-PWA updates, signing, and antivirus reputation were not certified by this release.
 
 ## Public preview boundary
 
@@ -43,6 +44,6 @@ This repository is a public product and verification overview. Proprietary game 
 
 ## Rights and disclosure
 
-Game design, code, rules, writing, and progression systems are first-party work by Gateway Information Group LLC. The marketing image was AI-assisted from creator-owned QuipKite artwork and reviewed for this project. See [LICENSE.md](LICENSE.md) and [PRIVACY.md](PRIVACY.md).
+Game direction, review, and release ownership are first-party work by Gateway Information Group LLC. Generative tools assisted portions of the code, copy, and marketing artwork; the artwork was derived from creator-owned QuipKite material. See [LICENSE.md](LICENSE.md) and [PRIVACY.md](PRIVACY.md).
 
 Copyright © 2026 Gateway Information Group LLC. All rights reserved.

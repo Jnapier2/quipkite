@@ -3,17 +3,27 @@
   "canonicalProjectName": "QuipKite",
   "repositoryRole": "Public product showcase",
   "publicBuild": {
-    "version": "0.23.1-launch-stability-rc2",
-    "buildId": "quipkite-0.23.1-launch-stability-20260827-2",
+    "version": "0.26.1-play-dock-rc1",
+    "buildId": "quipkite-0.26.1-play-dock-20260902-1",
     "playUrl": "https://zappytap.itch.io/quipkite-simulated-solo-preview",
-    "playerZipSha256": "3f9fedf09ff68a01b89811bc13aab7d10248b89a81ecb48c2da0de34493d3f9d"
+    "playerZipSha256": "EAFC51E923D25DD0AE88A42A6933A37DA67F7CE7D198695578E78AC3A38B3A75",
+    "playerZipBytes": 17878740,
+    "zipEntries": 59,
+    "itchProjectId": 4941059,
+    "itchUploadId": 19076369
   },
   "verification": {
-    "automatedTestsPassed": 182,
+    "automatedTestsPassed": 243,
     "automatedTestsFailed": 0,
-    "managedFilesVerified": 159,
-    "publicFlightPicksCompleted": 15,
-    "verifiedDate": "2026-08-27"
+    "focusedAuthorityTestsPassed": 34,
+    "managedFilesVerified": 232,
+    "staticBrowserChecksPassed": 4,
+    "testedViewports": [
+      "390x844",
+      "1280x800"
+    ],
+    "productionDependencyVulnerabilities": 0,
+    "verifiedDate": "2026-09-02"
   },
   "publicBoundary": {
     "simulatedSolo": true,
@@ -29,7 +39,7 @@
     "width": 1672,
     "height": 941,
     "sha256": "3afd883d3931d40bf24c6376e3a9bd3c09218c5a4eeaf6e20af39bebe0dba738",
-    "disclosure": "AI-assisted from creator-owned QuipKite artwork and reviewed for this project"
+    "disclosure": "Generative tools assisted portions of code, copy, and marketing artwork derived from creator-owned QuipKite material"
   },
   "copyright": "Copyright © 2026 Gateway Information Group LLC. All rights reserved."
 }
