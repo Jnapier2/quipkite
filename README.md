@@ -26,9 +26,9 @@ Free-text chat creates both creative pressure and safety complexity. QuipKite te
 
 ## Verification snapshot
 
-The current public preview is `0.28.1-story-ui-rc1`. It includes a story-first home, separate Stories and Collection views, adjustable text, optional Untimed Solo, and an ending-first postcard screen.
+The current public preview is `0.28.1-story-ui-rc1`, with the September 19 public-guide revision. It includes a story-first home, separate Stories and Collection views, adjustable text, optional Untimed Solo, and an ending-first postcard screen.
 
-A September 19, 2026 archive review verified all 58 recorded payload hashes in the 59-entry browser package. Its SHA-256 is `0D63E6B006E7FEEEDED28126B5AA1CD70B8743BCD9F2EE6C4198ACB2063469C4`, published as itch.io upload `19199036`. This was an archive-integrity review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
+A September 19, 2026 archive review verified all 58 recorded payload hashes in the 59-entry browser package. Its SHA-256 is `D0469D79362363F0E8BA64FAB12E0032F3D0CE6AB9BE1200E0905B2C3B78BFBE`, published as itch.io upload `19311665`. This was an archive-integrity review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
 
 ## Try a short story
 
