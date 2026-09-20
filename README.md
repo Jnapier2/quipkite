@@ -13,7 +13,7 @@ QuipKite is an adults-only, short-form word game that turns small reactive choic
 ## What the preview demonstrates
 
 - **A gentler opening:** Curated word choices replace the pressure of writing a perfect first message.
-- **A focused Play Dock:** The active conversation stays centered, the transcript scrolls independently, and reaction choices remain within reach at the bottom on desktop and mobile layouts.
+- **A clearer story view:** A pinned situation, reader-controlled scrolling, and explicit Send confirmation make the next choice easier to follow.
 - **Choice-driven storytelling:** Each selection changes the next hand and the eventual landing, creating a compact story that can be saved as a postcard.
 - **Shared moments without public chat:** Kite Knot reveals a Twin Spark or Crosswind Pair, Bridge Words bring earlier choices back into the story, and reversible depth settings let the tone deepen without locking the player in.
 - **Private decisions stay separate:** Players can rate the experience privately and make an independent friendship choice without implying contact or relationship consent.
@@ -22,19 +22,19 @@ QuipKite is an adults-only, short-form word game that turns small reactive choic
 
 ## Product insight
 
-Free-text chat creates both creative pressure and safety complexity. QuipKite tests a more structured interaction model: small choices create momentum, consent remains explicit, and the system—not another player—is responsible for keeping the round moving. That separation makes the experience easier to understand and gives future moderation and service design a clearer boundary.
+Free-text chat creates both creative pressure and safety complexity. QuipKite tests a more structured interaction model: small choices create momentum, consent remains explicit, and the system—not another player—is responsible for keeping the round moving. That separation makes the experience easier to understand and keeps the boundaries of simulated play explicit.
 
 ## Verification snapshot
 
-The public build is `0.26.1-play-dock-rc1` (`quipkite-0.26.1-play-dock-20260902-1`). Its release qualification recorded:
+The current public preview is `0.28.1-story-ui-rc1`. It includes a story-first home, separate Stories and Collection views, adjustable text, optional Untimed Solo, and an ending-first postcard screen.
 
-- 243 automated tests and 34 focused authority tests passed.
-- 232 managed-file hashes agreed across package identity checks.
-- 3,000 decks, 12,000 choices, and 138 reviewed words passed content validation.
-- TypeScript, ESLint, the five-stage production build, performance budgets, and the production dependency audit passed with zero reported vulnerabilities.
-- Four fresh-extraction browser checks at 390×844 and 1280×800 verified the centered conversation, independent transcript, bottom-docked choices, package-local privacy navigation, and no measured horizontal overflow.
+A September 19, 2026 archive review verified all 58 recorded payload hashes in the 59-entry browser package. Its SHA-256 is `0D63E6B006E7FEEEDED28126B5AA1CD70B8743BCD9F2EE6C4198ACB2063469C4`, published as itch.io upload `19199036`. This was an archive-integrity review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
 
-The 59-entry browser-playable ZIP is identified by SHA-256 `EAFC51E923D25DD0AE88A42A6933A37DA67F7CE7D198695578E78AC3A38B3A75`. The exact package is public as itch.io upload `19076369`; the prior `0.26.0` upload remains retained as rollback. Physical iOS or Android hardware, Safari and Firefox, formal screen-reader testing, installed-PWA updates, signing, and antivirus reputation were not certified by this release.
+## Try a short story
+
+Open the [public preview](https://zappytap.itch.io/quipkite-simulated-solo-preview), press **Run game**, and review the age and community prompts. Choose a story, select a word, then press **Send**. For example, try a different word when revisiting a fictional companion's prompt and compare how the conversation unfolds. Selecting a word alone does not submit it.
+
+The cover above is promotional artwork, not a screenshot of the current interface. The public preview page includes interface images and current play instructions.
 
 ## Public preview boundary
 

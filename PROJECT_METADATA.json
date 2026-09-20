@@ -3,27 +3,22 @@
   "canonicalProjectName": "QuipKite",
   "repositoryRole": "Public product showcase",
   "publicBuild": {
-    "version": "0.26.1-play-dock-rc1",
-    "buildId": "quipkite-0.26.1-play-dock-20260902-1",
+    "version": "0.28.1-story-ui-rc1",
+    "buildId": "quipkite-0.28.1-story-ui-20260911-1",
     "playUrl": "https://zappytap.itch.io/quipkite-simulated-solo-preview",
-    "playerZipSha256": "EAFC51E923D25DD0AE88A42A6933A37DA67F7CE7D198695578E78AC3A38B3A75",
-    "playerZipBytes": 17878740,
+    "playerZipSha256": "0D63E6B006E7FEEEDED28126B5AA1CD70B8743BCD9F2EE6C4198ACB2063469C4",
+    "playerZipBytes": 17895074,
     "zipEntries": 59,
     "itchProjectId": 4941059,
-    "itchUploadId": 19076369
+    "itchUploadId": 19199036
   },
   "verification": {
-    "automatedTestsPassed": 243,
-    "automatedTestsFailed": 0,
-    "focusedAuthorityTestsPassed": 34,
-    "managedFilesVerified": 232,
-    "staticBrowserChecksPassed": 4,
-    "testedViewports": [
-      "390x844",
-      "1280x800"
-    ],
-    "productionDependencyVulnerabilities": 0,
-    "verifiedDate": "2026-09-02"
+    "method": "Read-only archive integrity review",
+    "staticPayloadsVerified": 58,
+    "archiveEntriesReviewed": 59,
+    "applicationTestsRerun": false,
+    "verifiedDate": "2026-09-19",
+    "scope": "Exact published package identity and payload integrity; no new device or runtime qualification"
   },
   "publicBoundary": {
     "simulatedSolo": true,

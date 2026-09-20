@@ -26,7 +26,7 @@ REQUIRED_FILES = (
 REQUIRED_README_MARKERS = (
     "simulated Solo",
     "no real person is connected",
-    "0.26.1-play-dock-rc1",
+    "0.28.1-story-ui-rc1",
     "https://zappytap.itch.io/quipkite-simulated-solo-preview",
     "Proprietary game source",
     "Generative tools assisted",
@@ -79,21 +79,21 @@ def main() -> int:
     boundary = metadata.get("publicBoundary", {})
     asset_record = metadata.get("showcaseAsset", {})
 
-    if public_build.get("version") != "0.26.1-play-dock-rc1":
+    if public_build.get("version") != "0.28.1-story-ui-rc1":
         failures.append("metadata public build version does not match the verified preview")
-    if public_build.get("buildId") != "quipkite-0.26.1-play-dock-20260902-1":
+    if public_build.get("buildId") != "quipkite-0.28.1-story-ui-20260911-1":
         failures.append("metadata public build ID does not match the verified preview")
-    if public_build.get("playerZipSha256") != "EAFC51E923D25DD0AE88A42A6933A37DA67F7CE7D198695578E78AC3A38B3A75":
+    if public_build.get("playerZipSha256") != "0D63E6B006E7FEEEDED28126B5AA1CD70B8743BCD9F2EE6C4198ACB2063469C4":
         failures.append("metadata player ZIP hash does not match the verified preview")
-    if public_build.get("playerZipBytes") != 17878740 or public_build.get("zipEntries") != 59:
+    if public_build.get("playerZipBytes") != 17895074 or public_build.get("zipEntries") != 59:
         failures.append("metadata player ZIP size or entry count does not match the verified preview")
-    if public_build.get("itchUploadId") != 19076369:
+    if public_build.get("itchUploadId") != 19199036:
         failures.append("metadata itch upload does not match the verified preview")
     verification = metadata.get("verification", {})
-    if verification.get("automatedTestsPassed") != 243 or verification.get("automatedTestsFailed") != 0:
-        failures.append("metadata automated-test result does not match the verified preview")
-    if verification.get("focusedAuthorityTestsPassed") != 34 or verification.get("managedFilesVerified") != 232:
-        failures.append("metadata authority-test or managed-file result does not match the verified preview")
+    if verification.get("staticPayloadsVerified") != 58 or verification.get("archiveEntriesReviewed") != 59:
+        failures.append("metadata archive coverage does not match the reviewed package")
+    if verification.get("applicationTestsRerun") is not False:
+        failures.append("metadata must not claim application tests were rerun")
     if boundary.get("simulatedSolo") is not True or boundary.get("realPersonConnected") is not False:
         failures.append("metadata does not preserve the simulated-Solo boundary")
     if boundary.get("proprietarySourceIncluded") is not False:
