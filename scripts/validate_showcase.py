@@ -83,11 +83,11 @@ def main() -> int:
         failures.append("metadata public build version does not match the verified preview")
     if public_build.get("buildId") != "quipkite-0.28.1-story-ui-20260911-1":
         failures.append("metadata public build ID does not match the verified preview")
-    if public_build.get("playerZipSha256") != "0D63E6B006E7FEEEDED28126B5AA1CD70B8743BCD9F2EE6C4198ACB2063469C4":
+    if public_build.get("playerZipSha256") != "D0469D79362363F0E8BA64FAB12E0032F3D0CE6AB9BE1200E0905B2C3B78BFBE":
         failures.append("metadata player ZIP hash does not match the verified preview")
-    if public_build.get("playerZipBytes") != 17895074 or public_build.get("zipEntries") != 59:
+    if public_build.get("playerZipBytes") != 17890676 or public_build.get("zipEntries") != 59:
         failures.append("metadata player ZIP size or entry count does not match the verified preview")
-    if public_build.get("itchUploadId") != 19199036:
+    if public_build.get("itchUploadId") != 19311665:
         failures.append("metadata itch upload does not match the verified preview")
     verification = metadata.get("verification", {})
     if verification.get("staticPayloadsVerified") != 58 or verification.get("archiveEntriesReviewed") != 59:
