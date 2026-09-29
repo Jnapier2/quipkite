@@ -13,7 +13,7 @@ QuipKite is an adults-only, short-form word game that turns small reactive choic
 ## What the preview demonstrates
 
 - **A gentler opening:** Curated word choices replace the pressure of writing a perfect first message.
-- **A clearer story view:** A pinned situation, reader-controlled scrolling, and explicit Send confirmation make the next choice easier to follow.
+- **A clearer story view:** An illustrated setting, a focused current beat, collapsible history, and an anchored choice dock make the next decision easier to follow. Sending a word still requires explicit confirmation.
 - **Choice-driven storytelling:** Each selection changes the next hand and the eventual landing, creating a compact story that can be saved as a postcard.
 - **Shared moments without public chat:** Kite Knot reveals a Twin Spark or Crosswind Pair, Bridge Words bring earlier choices back into the story, and reversible depth settings let the tone deepen without locking the player in.
 - **Private decisions stay separate:** Players can rate the experience privately and make an independent friendship choice without implying contact or relationship consent.
@@ -26,9 +26,9 @@ Free-text chat creates both creative pressure and safety complexity. QuipKite te
 
 ## Verification snapshot
 
-The current public preview is `0.28.1-story-ui-rc1`, with the September 19 public-guide revision. It includes a story-first home, separate Stories and Collection views, adjustable text, optional Untimed Solo, and an ending-first postcard screen.
+The current public preview is `0.30.0-storybook-rc1`. It adds an illustrated Museum scene, a more focused reading layout, postcard endings, and optional thematic sound and ambience with volume and mute controls. Separate Stories and Collection views, adjustable text, and optional Untimed Solo remain available.
 
-A September 19, 2026 archive review verified all 58 recorded payload hashes in the 59-entry browser package. Its SHA-256 is `D0469D79362363F0E8BA64FAB12E0032F3D0CE6AB9BE1200E0905B2C3B78BFBE`, published as itch.io upload `19311665`. This was an archive-integrity review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
+A September 29, 2026 review verified all 59 recorded payload hashes in the browser package, which contains 60 regular files and one empty directory entry. Its SHA-256 is `640ADAC6E67C8A0DC463EA4FA619B28E112D14F80A0E915725840D2FDA9DC7F1`, published as itch.io upload `19466519`. All 60 hosted files were compared with the archive: 59 matched exactly, and the entry page retained the original HTML followed only by the inspected platform loader. This was an artifact and public-delivery review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
 
 ## Try a short story
 
