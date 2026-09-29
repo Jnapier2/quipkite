@@ -26,7 +26,7 @@ REQUIRED_FILES = (
 REQUIRED_README_MARKERS = (
     "simulated Solo",
     "no real person is connected",
-    "0.28.1-story-ui-rc1",
+    "0.30.0-storybook-rc1",
     "https://zappytap.itch.io/quipkite-simulated-solo-preview",
     "Proprietary game source",
     "Generative tools assisted",
@@ -79,18 +79,18 @@ def main() -> int:
     boundary = metadata.get("publicBoundary", {})
     asset_record = metadata.get("showcaseAsset", {})
 
-    if public_build.get("version") != "0.28.1-story-ui-rc1":
+    if public_build.get("version") != "0.30.0-storybook-rc1":
         failures.append("metadata public build version does not match the verified preview")
-    if public_build.get("buildId") != "quipkite-0.28.1-story-ui-20260911-1":
+    if public_build.get("buildId") != "quipkite-0.30.0-storybook-20260929-1":
         failures.append("metadata public build ID does not match the verified preview")
-    if public_build.get("playerZipSha256") != "D0469D79362363F0E8BA64FAB12E0032F3D0CE6AB9BE1200E0905B2C3B78BFBE":
+    if public_build.get("playerZipSha256") != "640ADAC6E67C8A0DC463EA4FA619B28E112D14F80A0E915725840D2FDA9DC7F1":
         failures.append("metadata player ZIP hash does not match the verified preview")
-    if public_build.get("playerZipBytes") != 17890676 or public_build.get("zipEntries") != 59:
+    if public_build.get("playerZipBytes") != 20397864 or public_build.get("zipEntries") != 61:
         failures.append("metadata player ZIP size or entry count does not match the verified preview")
-    if public_build.get("itchUploadId") != 19311665:
+    if public_build.get("itchUploadId") != 19466519:
         failures.append("metadata itch upload does not match the verified preview")
     verification = metadata.get("verification", {})
-    if verification.get("staticPayloadsVerified") != 58 or verification.get("archiveEntriesReviewed") != 59:
+    if verification.get("staticPayloadsVerified") != 59 or verification.get("archiveEntriesReviewed") != 61:
         failures.append("metadata archive coverage does not match the reviewed package")
     if verification.get("applicationTestsRerun") is not False:
         failures.append("metadata must not claim application tests were rerun")
