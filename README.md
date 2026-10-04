@@ -13,7 +13,7 @@ QuipKite is an adults-only, short-form word game that turns small reactive choic
 ## What the preview demonstrates
 
 - **A gentler opening:** Curated word choices replace the pressure of writing a perfect first message.
-- **A clearer story view:** An illustrated setting, a focused current beat, collapsible history, and an anchored choice dock make the next decision easier to follow. Sending a word still requires explicit confirmation.
+- **A clearer story view:** An illustrated setting, a focused current beat, collapsible history, and an anchored choice dock make the next decision easier to follow. Standard flights use an explicit Send confirmation; selecting a word in a choice-driven story advances it immediately.
 - **Choice-driven storytelling:** Each selection changes the next hand and the eventual landing, creating a compact story that can be saved as a postcard.
 - **Shared moments without public chat:** Kite Knot reveals a Twin Spark or Crosswind Pair, Bridge Words bring earlier choices back into the story, and reversible depth settings let the tone deepen without locking the player in.
 - **Private decisions stay separate:** Players can rate the experience privately and make an independent friendship choice without implying contact or relationship consent.
@@ -26,13 +26,13 @@ Free-text chat creates both creative pressure and safety complexity. QuipKite te
 
 ## Verification snapshot
 
-The current public preview is `0.30.0-storybook-rc1`. It adds an illustrated Museum scene, a more focused reading layout, postcard endings, and optional thematic sound and ambience with volume and mute controls. Separate Stories and Collection views, adjustable text, and optional Untimed Solo remain available.
+The current public preview is `0.32.0-storycraft-growth-rc1`. Storycraft connects earned Flight XP to new choices in compact branching stories. Illustrated settings, postcard endings, optional sound and ambience, adjustable text, and Untimed Solo for standard flights remain available.
 
-A September 29, 2026 review verified all 59 recorded payload hashes in the browser package, which contains 60 regular files and one empty directory entry. Its SHA-256 is `640ADAC6E67C8A0DC463EA4FA619B28E112D14F80A0E915725840D2FDA9DC7F1`, published as itch.io upload `19466519`. All 60 hosted files were compared with the archive: 59 matched exactly, and the entry page retained the original HTML followed only by the inspected platform loader. This was an artifact and public-delivery review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
+An October 4, 2026 review verified all 60 recorded payload hashes in the browser package, which contains 61 regular files and one empty directory entry. Its SHA-256 is `CDBEE20B3B446161B74048E9E121128DFB8A8DCEC9C3A664A2257115FE2DB79C`, published as itch.io upload `19560446`. All 61 hosted files were compared with the archive: 60 matched exactly, and the entry page retained the original HTML followed only by the inspected platform loader. This was an artifact and public-delivery review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
 
 ## Try a short story
 
-Open the [public preview](https://zappytap.itch.io/quipkite-simulated-solo-preview), press **Run game**, and review the age and community prompts. Choose a story, select a word, then press **Send**. For example, try a different word when revisiting a fictional companion's prompt and compare how the conversation unfolds. Selecting a word alone does not submit it.
+Open the [public preview](https://zappytap.itch.io/quipkite-simulated-solo-preview), press **Run game**, and review the age and community prompts. For Storycraft, open **Stories → Explore choice-driven stories → Storycraft**. Selecting a word advances a choice-driven story immediately. Standard flights instead let you select a word and confirm it with **Send**. Try a different choice on another visit and compare how the story unfolds.
 
 The cover above is promotional artwork, not a screenshot of the current interface. The public preview page includes interface images and current play instructions.
 
