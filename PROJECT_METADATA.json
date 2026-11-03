@@ -1,24 +1,27 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "canonicalProjectName": "QuipKite",
   "repositoryRole": "Public product showcase",
   "publicBuild": {
-    "version": "0.32.0-storycraft-growth-rc1",
-    "buildId": "quipkite-0.32.0-storycraft-growth-20261004-1",
+    "version": "0.36.0",
+    "buildId": "quipkite-0.36.0-20261102-1",
     "playUrl": "https://zappytap.itch.io/quipkite-simulated-solo-preview",
-    "playerZipSha256": "CDBEE20B3B446161B74048E9E121128DFB8A8DCEC9C3A664A2257115FE2DB79C",
-    "playerZipBytes": 20408291,
-    "zipEntries": 62,
-    "itchProjectId": 4941059,
-    "itchUploadId": 19560446
+    "playerZipSha256": "09843F12594DF84BC736741375F6E303CFFC19E4B7DC0F38A46496D945FFC264",
+    "playerZipBytes": 26669323,
+    "zipEntries": 64,
+    "artifactRevision": "privacy.1",
+    "publicationStatus": "prepared_not_promoted"
   },
   "verification": {
-    "method": "Read-only archive integrity and hosted-file comparison",
-    "staticPayloadsVerified": 60,
-    "archiveEntriesReviewed": 62,
+    "method": "Exact local ZIP identity and two file inventories; metadata privacy regressions; isolated desktop/mobile loading, privacy navigation and Solo play",
+    "archiveEntriesReviewed": 64,
+    "unchangedApplicationFiles": 60,
+    "automatedRegressions": 8,
+    "browserScenarios": 4,
     "applicationTestsRerun": false,
-    "verifiedDate": "2026-10-04",
-    "scope": "60 managed hashes verified; 61 hosted regular files compared, with only the inspected platform loader appended to the entry HTML; no new application-test or device qualification"
+    "verifiedDate": "2026-11-03",
+    "hostingStatus": "Final hosted artifact comparison pending; no new host clearance",
+    "scope": "Local Solo artifact only; separate online Multiplayer, physical devices, screen readers and Norton not qualified"
   },
   "publicBoundary": {
     "simulatedSolo": true,
@@ -27,14 +30,21 @@
     "productionAccounts": false,
     "payments": false,
     "automaticProductTelemetry": false,
-    "proprietarySourceIncluded": false
+    "proprietarySourceIncluded": false,
+    "reviewedExperience": "Embedded Solo browser package",
+    "separateOnlineExperience": {
+      "linkedFromProduct": true,
+      "requiresAccounts": true,
+      "twoPlayerPlayVerified": false
+    }
   },
   "showcaseAsset": {
-    "path": "assets/quipkite-simulated-solo-preview.png",
-    "width": 1672,
-    "height": 941,
-    "sha256": "3afd883d3931d40bf24c6376e3a9bd3c09218c5a4eeaf6e20af39bebe0dba738",
-    "disclosure": "Generative tools assisted portions of code, copy, and marketing artwork derived from creator-owned QuipKite material"
+    "path": "assets/quipkite-solo-0.36.0.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "e82b50787e1b620aa8b9a740c33ccc5806e9ef04f80b1c39d2e8dd1408c676cc",
+    "disclosure": "Generative tools assisted portions of the game code, copy and artwork derived from creator-owned QuipKite material; this image is an actual interface capture",
+    "kind": "Genuine application screenshot with fictional game state"
   },
   "copyright": "Copyright © 2026 Gateway Information Group LLC. All rights reserved."
 }

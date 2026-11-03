@@ -1,11 +1,11 @@
 # Privacy Boundary
 
-The linked QuipKite public build is a simulated Solo preview. No real person is connected.
+This review covers the embedded QuipKite Solo browser package. Solo uses fictional companions: no real person is connected. Progress and keepsakes use local browser state. The static package does not enable real-person matchmaking, production accounts, payments, online feedback or automatic product telemetry.
 
-The preview uses local browser state for progress and keepsakes. It does not provide production accounts, real-person matchmaking, public chat, payments, or automatic product telemetry. The preview does not intentionally transmit selected words, aliases, private ratings, friendship choices, or saved postcards as product analytics.
+The product page and Home screen also offer a separate browser Multiplayer experience. That service uses accounts and internet access. Its authentication, two-player sessions and data handling are outside this Solo artifact review; the local-only statements above must not be applied to that service.
 
-The hosting platform may process ordinary network, device, cookie, or usage information under its own privacy policy. That platform activity is separate from QuipKite's local game state.
+The repository contains public product documentation and a genuine screenshot with fictional game state. Proprietary implementation, internal planning, private source/build inventories and credentials are excluded.
 
-Do not submit personal, identifying, sensitive, or emergency information through the game or public repository.
+Hosting platforms may process ordinary network, device, cookie or usage information under their own privacy policies. That platform activity is separate from Solo game state. Do not submit personal, identifying, sensitive or emergency information through the game or repository.
 
 Copyright © 2026 Gateway Information Group LLC. All rights reserved.
