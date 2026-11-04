@@ -26,7 +26,7 @@ Free-text chat creates both creative pressure and safety complexity. QuipKite te
 
 ## Verification snapshot
 
-The current public preview is `0.32.0-storycraft-growth-rc1`. Storycraft connects earned Flight XP to new choices in compact branching stories. Illustrated settings, postcard endings, optional sound and ambience, adjustable text, and Untimed Solo for standard flights remain available.
+The October 4, 2026 review covered `0.32.0-storycraft-growth-rc1`. That build connected earned Flight XP to new Storycraft choices and included illustrated settings, postcard endings, optional sound and ambience, adjustable text, and Untimed Solo for standard flights. The [verification record](PROJECT_METADATA.json) describes the build reviewed on that date.
 
 An October 4, 2026 review verified all 60 recorded payload hashes in the browser package, which contains 61 regular files and one empty directory entry. Its SHA-256 is `CDBEE20B3B446161B74048E9E121128DFB8A8DCEC9C3A664A2257115FE2DB79C`, published as itch.io upload `19560446`. All 61 hosted files were compared with the archive: 60 matched exactly, and the entry page retained the original HTML followed only by the inspected platform loader. This was an artifact and public-delivery review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
 
