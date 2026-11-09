@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 METADATA = ROOT / "PROJECT_METADATA.json"
-ASSET = ROOT / "assets" / "quipkite-simulated-solo-preview.png"
+ASSET = ROOT / "assets" / "quipkite-solo-0.36.0.png"
 
 REQUIRED_FILES = (
     README,
@@ -24,9 +24,12 @@ REQUIRED_FILES = (
 )
 
 REQUIRED_README_MARKERS = (
-    "simulated Solo",
+    "Solo play uses fictional companions",
     "no real person is connected",
-    "0.32.0-storycraft-growth-rc1",
+    "0.36.0",
+    "privacy.1",
+    "genuine screenshot",
+    'On November 8, 2026, the public itch.io preview matched the reviewed package across all 64 served files.',
     "https://zappytap.itch.io/quipkite-simulated-solo-preview",
     "Proprietary game source",
     "Generative tools assisted",
@@ -79,25 +82,46 @@ def main() -> int:
     boundary = metadata.get("publicBoundary", {})
     asset_record = metadata.get("showcaseAsset", {})
 
-    if public_build.get("version") != "0.32.0-storycraft-growth-rc1":
-        failures.append("metadata public build version does not match the verified preview")
-    if public_build.get("buildId") != "quipkite-0.32.0-storycraft-growth-20261004-1":
-        failures.append("metadata public build ID does not match the verified preview")
-    if public_build.get("playerZipSha256") != "CDBEE20B3B446161B74048E9E121128DFB8A8DCEC9C3A664A2257115FE2DB79C":
-        failures.append("metadata player ZIP hash does not match the verified preview")
-    if public_build.get("playerZipBytes") != 20408291 or public_build.get("zipEntries") != 62:
-        failures.append("metadata player ZIP size or entry count does not match the verified preview")
-    if public_build.get("itchUploadId") != 19560446:
-        failures.append("metadata itch upload does not match the verified preview")
+    if public_build.get("version") != "0.36.0":
+        failures.append("metadata version does not match the reviewed artifact")
+    if public_build.get("buildId") != "quipkite-0.36.0-20261102-1":
+        failures.append("metadata build ID does not match the reviewed artifact")
+    if public_build.get("artifactRevision") != "privacy.1" or public_build.get("publicationStatus") != "published_verified":
+        failures.append("metadata must identify the published and verified artifact")
+    if public_build.get("playerZipSha256") != "09843F12594DF84BC736741375F6E303CFFC19E4B7DC0F38A46496D945FFC264":
+        failures.append("metadata ZIP hash does not match the reviewed artifact")
+    if public_build.get("playerZipBytes") != 26669323 or public_build.get("zipEntries") != 64:
+        failures.append("metadata ZIP size or entry count does not match the reviewed artifact")
+    if any(key in public_build for key in ("itchProjectId", "itchUploadId", "providerBuildId")):
+        failures.append("provider deployment identifiers belong in private evidence")
     verification = metadata.get("verification", {})
-    if verification.get("staticPayloadsVerified") != 60 or verification.get("archiveEntriesReviewed") != 62:
+    if verification.get("unchangedApplicationFiles") != 60 or verification.get("archiveEntriesReviewed") != 64:
         failures.append("metadata archive coverage does not match the reviewed package")
+    if verification.get("automatedRegressions") != 8 or verification.get("browserScenarios") != 4:
+        failures.append("metadata local-check counts do not match the reviewed evidence")
+    if verification.get("verifiedDate") != "2026-11-03":
+        failures.append("metadata review date changed without evidence")
+    if verification.get("hostingStatus") != "Verified against the public itch.io browser preview":
+        failures.append("metadata must identify the verified public preview")
+    hosted = verification.get("hostedComparison")
+    if hosted != {
+        "reviewedDate": "2026-11-08",
+        "artifactSha256": public_build.get("playerZipSha256"),
+        "servedFilesCompared": 64,
+        "byteExactMatches": 63,
+        "reviewedPlatformLauncherEntries": 1,
+        "method": "Anonymous public launch selection and byte comparison against the reviewed browser archive",
+    }:
+        failures.append("hosted comparison evidence is missing, incomplete, or bound to a different artifact")
     if verification.get("applicationTestsRerun") is not False:
         failures.append("metadata must not claim application tests were rerun")
     if boundary.get("simulatedSolo") is not True or boundary.get("realPersonConnected") is not False:
         failures.append("metadata does not preserve the simulated-Solo boundary")
     if boundary.get("proprietarySourceIncluded") is not False:
         failures.append("metadata does not preserve the proprietary-source boundary")
+    online = boundary.get("separateOnlineExperience", {})
+    if online != {"linkedFromProduct": True, "requiresAccounts": True, "twoPlayerPlayVerified": False}:
+        failures.append("metadata must distinguish separate online access from reviewed Solo play")
 
     width, height = png_dimensions(ASSET)
     if (width, height) != (asset_record.get("width"), asset_record.get("height")):
@@ -124,7 +148,7 @@ def main() -> int:
             print(f"- {failure}", file=sys.stderr)
         return 1
 
-    print("QuipKite showcase validation passed.")
+    print("QuipKite showcase validation passed with the recorded hosted comparison.")
     print(f"Verified {len(REQUIRED_FILES)} required files and asset {width}x{height} ({asset_hash}).")
     return 0
 

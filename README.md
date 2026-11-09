@@ -2,48 +2,43 @@
 
 [![Showcase validation](https://github.com/Jnapier2/quipkite/actions/workflows/validate.yml/badge.svg)](https://github.com/Jnapier2/quipkite/actions/workflows/validate.yml)
 
-![QuipKite simulated Solo preview](assets/quipkite-simulated-solo-preview.png)
+![QuipKite Solo word flight with a fictional companion and visible choices](assets/quipkite-solo-0.36.0.png)
 
-**Make a spark worth keeping.**
+**Small choices. Stories worth keeping.**
 
-QuipKite is an adults-only, short-form word game that turns small reactive choices into an unexpected shared-style story. The current public preview is intentionally simulated Solo play: no real person is connected.
+QuipKite turns word choices into short, illustrated stories. Solo play uses fictional companions: no real person is connected. It offers a low-pressure way to explore an idea, follow an unexpected turn, and keep an ending you like.
 
-[Play the simulated Solo preview](https://zappytap.itch.io/quipkite-simulated-solo-preview)
+[Try the browser preview](https://zappytap.itch.io/quipkite-simulated-solo-preview) · [Inspect the review record](PROJECT_METADATA.json) · [Read the privacy boundary](PRIVACY.md)
 
-## What the preview demonstrates
+## What it demonstrates
 
-- **A gentler opening:** Curated word choices replace the pressure of writing a perfect first message.
-- **A clearer story view:** An illustrated setting, a focused current beat, collapsible history, and an anchored choice dock make the next decision easier to follow. Standard flights use an explicit Send confirmation; selecting a word in a choice-driven story advances it immediately.
-- **Choice-driven storytelling:** Each selection changes the next hand and the eventual landing, creating a compact story that can be saved as a postcard.
-- **Shared moments without public chat:** Kite Knot reveals a Twin Spark or Crosswind Pair, Bridge Words bring earlier choices back into the story, and reversible depth settings let the tone deepen without locking the player in.
-- **Private decisions stay separate:** Players can rate the experience privately and make an independent friendship choice without implying contact or relationship consent.
-- **Progress worth returning to:** Completed flights award progress, private Landing Stamps, and keepsakes without paid boosts or streak-pressure mechanics.
-- **Resilient local play:** Pause and resume, keyboard controls, recoverable saves, restricted-storage guidance, and responsive layouts keep the preview usable across common browser conditions.
+- **An easier starting point:** Choose from a small hand of words instead of composing a perfect opening message. The current situation and reply controls stay close together.
+- **Room to reconsider:** Go back one choice while a choice-driven story is unfinished. Completed stories remain intact.
+- **Useful recollection:** Optional “Kept before” markers recognize choices from the same path in a story already in your Collection. Unseen endings stay a surprise.
+- **Progress that explains itself:** Named Storycraft discoveries, visible next goals and progress on Home help explain what was earned and what can be tried next.
+- **Keepsakes with continuity:** Save favorite endings and return to explore another path without replacing the original.
+- **Control over pace:** Timed or untimed word flights, adjustable text, reduced motion, pause/resume and responsive controls support different ways of playing.
 
-## Product insight
+## Why the design is useful
 
-Free-text chat creates both creative pressure and safety complexity. QuipKite tests a more structured interaction model: small choices create momentum, consent remains explicit, and the system—not another player—is responsible for keeping the round moving. That separation makes the experience easier to understand and keeps the boundaries of simulated play explicit.
+Small choices reduce blank-page pressure. A clear distinction between an unfinished story and a kept ending makes experimentation easier to understand. Progress is connected to new choices rather than a public popularity score.
+
+For a reviewer, the project demonstrates stateful interface design, carefully bounded undo, recoverable local progress and clear separation between Solo play and a separate online experience.
+
+## Try a short flight
+
+Open the browser preview and complete its age and community prompts. Choose Solo, pick a fictional companion and a starting situation, then select a word and confirm it with **Send** when offered. Try a choice-driven story to explore **Back one choice** before finishing. Return to a kept story's path to inspect the optional recollection markers.
+
+The image above is a genuine screenshot from an isolated run of the reviewed 0.36.0 browser package with fictional game state. It is not promotional artwork.
 
 ## Verification snapshot
 
-The October 4, 2026 review covered `0.32.0-storycraft-growth-rc1`. That build connected earned Flight XP to new Storycraft choices and included illustrated settings, postcard endings, optional sound and ambience, adjustable text, and Untimed Solo for standard flights. The [verification record](PROJECT_METADATA.json) describes the build reviewed on that date.
+The reviewed artifact is **0.36.0**, metadata revision **privacy.1**. Its archive identity, file inventories and privacy boundaries were checked, followed by isolated desktop/mobile loading, packaged privacy navigation and Solo-play checks. Application code and game assets are unchanged by this metadata revision. On November 8, 2026, the public itch.io preview matched the reviewed package across all 64 served files. The entry page included only itch.io’s reviewed launcher in addition to the exact game HTML. The [machine-readable review record](PROJECT_METADATA.json) identifies the exact artifact and limits.
 
-An October 4, 2026 review verified all 60 recorded payload hashes in the browser package, which contains 61 regular files and one empty directory entry. Its SHA-256 is `CDBEE20B3B446161B74048E9E121128DFB8A8DCEC9C3A664A2257115FE2DB79C`, published as itch.io upload `19560446`. All 61 hosted files were compared with the archive: 60 matched exactly, and the entry page retained the original HTML followed only by the inspected platform loader. This was an artifact and public-delivery review; it did not rerun the application's automated tests or certify physical devices, screen readers, or endpoint-security compatibility.
+## Contribution and rights
 
-## Try a short story
+Game direction, review and release ownership are first-party work by Gateway Information Group LLC. Generative tools assisted portions of the code, copy and artwork derived from creator-owned QuipKite material. The repository contains a product overview and review evidence; Proprietary game source, internal plans, credentials and unpublished source builds are intentionally excluded. See [LICENSE.md](LICENSE.md).
 
-Open the [public preview](https://zappytap.itch.io/quipkite-simulated-solo-preview), press **Run game**, and review the age and community prompts. For Storycraft, open **Stories → Explore choice-driven stories → Storycraft**. Selecting a word advances a choice-driven story immediately. Standard flights instead let you select a word and confirm it with **Send**. Try a different choice on another visit and compare how the story unfolds.
-
-The cover above is promotional artwork, not a screenshot of the current interface. The public preview page includes interface images and current play instructions.
-
-## Public preview boundary
-
-This is a simulated Solo prototype, not a live social or dating service. It has no real-person matchmaking, public chat, production accounts, payments, or automatic product telemetry. Local preview state is not evidence of an online account or durable cloud record.
-
-This repository is a public product and verification overview. Proprietary game source, production plans, moderation operations, internal evidence, credentials, and unpublished builds are intentionally excluded.
-
-## Rights and disclosure
-
-Game direction, review, and release ownership are first-party work by Gateway Information Group LLC. Generative tools assisted portions of the code, copy, and marketing artwork; the artwork was derived from creator-owned QuipKite material. See [LICENSE.md](LICENSE.md) and [PRIVACY.md](PRIVACY.md).
+QuipKite is for adults 18+. The embedded Solo package keeps gameplay state on the device; the product page also links to separate browser Multiplayer requiring accounts and internet access. These checks do not establish two-player gameplay, account behavior, physical-device or screen-reader compatibility, or Norton clearance. Hosting platforms process information under their own policies.
 
 Copyright © 2026 Gateway Information Group LLC. All rights reserved.
