@@ -33,12 +33,12 @@ The image above is a genuine screenshot from an isolated run of the reviewed 0.3
 
 ## Verification snapshot
 
-The reviewed artifact is **0.36.0**, metadata revision **privacy.1**. Its archive identity, file inventories and privacy boundaries were checked, followed by isolated desktop/mobile loading, packaged privacy navigation and Solo-play checks. Application code and game assets are unchanged by this metadata revision. The [machine-readable review record](PROJECT_METADATA.json) identifies the exact artifact and limits.
+The reviewed artifact is **0.36.0**, metadata revision **privacy.1**. Its archive identity, file inventories and privacy boundaries were checked, followed by isolated desktop/mobile loading, packaged privacy navigation and Solo-play checks. Application code and game assets are unchanged by this metadata revision. On November 8, 2026, the public itch.io preview matched the reviewed package across all 64 served files. The entry page included only itch.io’s reviewed launcher in addition to the exact game HTML. The [machine-readable review record](PROJECT_METADATA.json) identifies the exact artifact and limits.
 
 ## Contribution and rights
 
 Game direction, review and release ownership are first-party work by Gateway Information Group LLC. Generative tools assisted portions of the code, copy and artwork derived from creator-owned QuipKite material. The repository contains a product overview and review evidence; Proprietary game source, internal plans, credentials and unpublished source builds are intentionally excluded. See [LICENSE.md](LICENSE.md).
 
-This proposed refresh awaits comparison with the final hosted artifact before promotion. QuipKite is for adults 18+. The embedded Solo package keeps gameplay state on the device; the product page also links to separate browser Multiplayer requiring accounts and internet access. These checks do not establish two-player gameplay, account behavior, physical-device or screen-reader compatibility, or Norton clearance. Hosting platforms process information under their own policies.
+QuipKite is for adults 18+. The embedded Solo package keeps gameplay state on the device; the product page also links to separate browser Multiplayer requiring accounts and internet access. These checks do not establish two-player gameplay, account behavior, physical-device or screen-reader compatibility, or Norton clearance. Hosting platforms process information under their own policies.
 
 Copyright © 2026 Gateway Information Group LLC. All rights reserved.

@@ -33,13 +33,19 @@ class ShowcaseEvidenceTests(unittest.TestCase):
     def mutate(self,change):
         data=json.loads(review.METADATA.read_bytes());change(data)
         review.METADATA.write_text(json.dumps(data),encoding='utf-8')
-    def test_reviewed_proposal_passes(self):
+    def test_verified_showcase_passes(self):
         code,text=self.run_review();self.assertEqual(0,code,text)
     def test_wrong_artifact_is_rejected(self):
         self.mutate(lambda d:d['publicBuild'].update(playerZipSha256='0'*64))
         self.assertNotEqual(0,self.run_review()[0])
     def test_unverified_host_cannot_be_declared_published(self):
-        self.mutate(lambda d:d['publicBuild'].update(publicationStatus='published'))
+        self.mutate(lambda d:d['verification'].pop('hostedComparison'))
+        self.assertNotEqual(0,self.run_review()[0])
+    def test_partial_hosted_comparison_is_rejected(self):
+        self.mutate(lambda d:d['verification']['hostedComparison'].update(servedFilesCompared=63))
+        self.assertNotEqual(0,self.run_review()[0])
+    def test_hosted_evidence_for_different_artifact_is_rejected(self):
+        self.mutate(lambda d:d['verification']['hostedComparison'].update(artifactSha256='0'*64))
         self.assertNotEqual(0,self.run_review()[0])
     def test_real_person_and_online_scope_cannot_be_conflated(self):
         self.mutate(lambda d:d['publicBoundary']['separateOnlineExperience'].update(twoPlayerPlayVerified=True))
@@ -48,6 +54,6 @@ class ShowcaseEvidenceTests(unittest.TestCase):
         review.ASSET.write_bytes(review.ASSET.read_bytes()+b'changed')
         self.assertNotEqual(0,self.run_review()[0])
     def test_missing_qualification_is_rejected(self):
-        review.README.write_text(review.README.read_text(encoding='utf-8').replace('awaits comparison with the final hosted artifact','is fully published'),encoding='utf-8')
+        review.README.write_text(review.README.read_text(encoding='utf-8').replace('On November 8, 2026, the public itch.io preview matched the reviewed package across all 64 served files.','is fully published'),encoding='utf-8')
         self.assertNotEqual(0,self.run_review()[0])
 if __name__=='__main__':unittest.main(verbosity=2)

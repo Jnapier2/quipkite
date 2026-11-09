@@ -29,7 +29,7 @@ REQUIRED_README_MARKERS = (
     "0.36.0",
     "privacy.1",
     "genuine screenshot",
-    "awaits comparison with the final hosted artifact",
+    'On November 8, 2026, the public itch.io preview matched the reviewed package across all 64 served files.',
     "https://zappytap.itch.io/quipkite-simulated-solo-preview",
     "Proprietary game source",
     "Generative tools assisted",
@@ -86,8 +86,8 @@ def main() -> int:
         failures.append("metadata version does not match the reviewed artifact")
     if public_build.get("buildId") != "quipkite-0.36.0-20261102-1":
         failures.append("metadata build ID does not match the reviewed artifact")
-    if public_build.get("artifactRevision") != "privacy.1" or public_build.get("publicationStatus") != "prepared_not_promoted":
-        failures.append("metadata must retain the explicit pending-publication state")
+    if public_build.get("artifactRevision") != "privacy.1" or public_build.get("publicationStatus") != "published_verified":
+        failures.append("metadata must identify the published and verified artifact")
     if public_build.get("playerZipSha256") != "09843F12594DF84BC736741375F6E303CFFC19E4B7DC0F38A46496D945FFC264":
         failures.append("metadata ZIP hash does not match the reviewed artifact")
     if public_build.get("playerZipBytes") != 26669323 or public_build.get("zipEntries") != 64:
@@ -101,8 +101,18 @@ def main() -> int:
         failures.append("metadata local-check counts do not match the reviewed evidence")
     if verification.get("verifiedDate") != "2026-11-03":
         failures.append("metadata review date changed without evidence")
-    if verification.get("hostingStatus") != "Final hosted artifact comparison pending; no new host clearance":
-        failures.append("metadata must preserve the unverified final-host boundary")
+    if verification.get("hostingStatus") != "Verified against the public itch.io browser preview":
+        failures.append("metadata must identify the verified public preview")
+    hosted = verification.get("hostedComparison")
+    if hosted != {
+        "reviewedDate": "2026-11-08",
+        "artifactSha256": public_build.get("playerZipSha256"),
+        "servedFilesCompared": 64,
+        "byteExactMatches": 63,
+        "reviewedPlatformLauncherEntries": 1,
+        "method": "Anonymous public launch selection and byte comparison against the reviewed browser archive",
+    }:
+        failures.append("hosted comparison evidence is missing, incomplete, or bound to a different artifact")
     if verification.get("applicationTestsRerun") is not False:
         failures.append("metadata must not claim application tests were rerun")
     if boundary.get("simulatedSolo") is not True or boundary.get("realPersonConnected") is not False:
@@ -138,7 +148,7 @@ def main() -> int:
             print(f"- {failure}", file=sys.stderr)
         return 1
 
-    print("QuipKite showcase proposal validation passed; hosted promotion remains pending.")
+    print("QuipKite showcase validation passed with the recorded hosted comparison.")
     print(f"Verified {len(REQUIRED_FILES)} required files and asset {width}x{height} ({asset_hash}).")
     return 0
 

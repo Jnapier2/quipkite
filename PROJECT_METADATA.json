@@ -10,7 +10,7 @@
     "playerZipBytes": 26669323,
     "zipEntries": 64,
     "artifactRevision": "privacy.1",
-    "publicationStatus": "prepared_not_promoted"
+    "publicationStatus": "published_verified"
   },
   "verification": {
     "method": "Exact local ZIP identity and two file inventories; metadata privacy regressions; isolated desktop/mobile loading, privacy navigation and Solo play",
@@ -20,8 +20,16 @@
     "browserScenarios": 4,
     "applicationTestsRerun": false,
     "verifiedDate": "2026-11-03",
-    "hostingStatus": "Final hosted artifact comparison pending; no new host clearance",
-    "scope": "Local Solo artifact only; separate online Multiplayer, physical devices, screen readers and Norton not qualified"
+    "hostingStatus": "Verified against the public itch.io browser preview",
+    "scope": "Embedded Solo browser package and exact hosted delivery; separate online Multiplayer, physical devices, screen readers and Norton were outside this review",
+    "hostedComparison": {
+      "reviewedDate": "2026-11-08",
+      "artifactSha256": "09843F12594DF84BC736741375F6E303CFFC19E4B7DC0F38A46496D945FFC264",
+      "servedFilesCompared": 64,
+      "byteExactMatches": 63,
+      "reviewedPlatformLauncherEntries": 1,
+      "method": "Anonymous public launch selection and byte comparison against the reviewed browser archive"
+    }
   },
   "publicBoundary": {
     "simulatedSolo": true,
