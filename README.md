@@ -10,6 +10,10 @@ QuipKite turns word choices into short, illustrated stories. Solo play uses fict
 
 [Try the browser preview](https://zappytap.itch.io/quipkite-simulated-solo-preview) · [Inspect the review record](PROJECT_METADATA.json) · [Read the privacy boundary](PRIVACY.md)
 
+## Current release
+
+**0.39.0** is available in the [browser on itch.io](https://zappytap.itch.io/quipkite-simulated-solo-preview) and [for Windows on Steam](https://store.steampowered.com/app/5345880/). Choose **Continue story** from Home to pick up an unfinished Solo story, or **Exit** to check that your Solo progress saved before you leave. The [release notes](https://zappytap.itch.io/quipkite-simulated-solo-preview/devlog/1782072/pick-up-where-you-left-off) walk through the changes.
+
 ## What it demonstrates
 
 - **An easier starting point:** Choose from a small hand of words instead of composing a perfect opening message. The current situation and reply controls stay close together.
@@ -31,9 +35,9 @@ Open the browser preview and complete its age and community prompts. Choose Solo
 
 The image above is a genuine screenshot from an isolated run of the reviewed 0.36.0 browser package with fictional game state. It is not promotional artwork.
 
-## Verification snapshot
+## Earlier browser verification
 
-The reviewed artifact is **0.36.0**, metadata revision **privacy.1**. Its archive identity, file inventories and privacy boundaries were checked, followed by isolated desktop/mobile loading, packaged privacy navigation and Solo-play checks. Application code and game assets are unchanged by this metadata revision. On November 8, 2026, the public itch.io preview matched the reviewed package across all 64 served files. The entry page included only itch.io’s reviewed launcher in addition to the exact game HTML. The [machine-readable review record](PROJECT_METADATA.json) identifies the exact artifact and limits.
+The earlier reviewed artifact is **0.36.0**, metadata revision **privacy.1**. Its archive identity, file inventories and privacy boundaries were checked, followed by isolated desktop/mobile loading, packaged privacy navigation and Solo-play checks. Application code and game assets are unchanged by this metadata revision. On November 8, 2026, the public itch.io preview matched the reviewed package across all 64 served files. The entry page included only itch.io’s reviewed launcher in addition to the exact game HTML. The [machine-readable review record](PROJECT_METADATA.json) identifies the exact artifact and limits.
 
 ## Contribution and rights
 
