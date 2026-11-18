@@ -3,12 +3,13 @@
   "canonicalProjectName": "QuipKite",
   "repositoryRole": "Public product showcase",
   "currentStorefront": {
-    "version": "0.39.0",
-    "observedDate": "2026-11-16",
+    "version": "0.40.0",
+    "browserVersion": "0.40.0",
+    "windowsVersion": "0.39.0",
+    "observedDate": "2026-11-17",
     "browserUrl": "https://zappytap.itch.io/quipkite-simulated-solo-preview",
     "windowsUrl": "https://store.steampowered.com/app/5345880/",
-    "releaseNotesUrl": "https://zappytap.itch.io/quipkite-simulated-solo-preview/devlog/1782072/pick-up-where-you-left-off",
-    "scope": "Current public storefront and release notes. The publicBuild and verification fields below record the earlier exact 0.36.0 browser comparison."
+    "scope": "The active itch.io browser player reports 0.40.0. Steam remains on the earlier 0.39.0 release. The publicBuild and verification fields below record the dated exact 0.36.0 browser comparison."
   },
   "publicBuild": {
     "version": "0.36.0",
