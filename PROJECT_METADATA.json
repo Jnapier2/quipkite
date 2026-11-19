@@ -3,13 +3,13 @@
   "canonicalProjectName": "QuipKite",
   "repositoryRole": "Public product showcase",
   "currentStorefront": {
-    "version": "0.40.0",
-    "browserVersion": "0.40.0",
+    "version": "0.41.0",
+    "browserVersion": "0.41.0",
     "windowsVersion": "0.39.0",
-    "observedDate": "2026-11-17",
+    "observedDate": "2026-11-19",
     "browserUrl": "https://zappytap.itch.io/quipkite-simulated-solo-preview",
     "windowsUrl": "https://store.steampowered.com/app/5345880/",
-    "scope": "The active itch.io browser player reports 0.40.0. Steam remains on the earlier 0.39.0 release. The publicBuild and verification fields below record the dated exact 0.36.0 browser comparison."
+    "scope": "The active itch.io browser player reports 0.41.0. The November 18 Windows release record lists Steam at 0.39.0. The publicBuild and verification fields record the dated exact 0.36.0 browser comparison."
   },
   "publicBuild": {
     "version": "0.36.0",
