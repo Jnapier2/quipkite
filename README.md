@@ -12,7 +12,7 @@ QuipKite turns word choices into short, illustrated stories. Solo play uses fict
 
 ## Current release
 
-The active itch.io browser player is **0.41.0**. The Windows release record lists Steam at **0.39.0**. [Play in the browser](https://zappytap.itch.io/quipkite-simulated-solo-preview) · [Windows game on Steam](https://store.steampowered.com/app/5345880/)
+The itch.io browser preview is **0.42.1**. The publisher’s November 24 Steam check recorded **0.41.5** for Windows. [Play in the browser](https://zappytap.itch.io/quipkite-simulated-solo-preview) · [Windows game on Steam](https://store.steampowered.com/app/5345880/)
 
 From Home, open **Choice Stories** to start or resume a journey. **Select latest save** finds the newest saved journey for the selected Solo mode. Open **Save Slots** to name a checkpoint or compare progress before loading. Slots stay on the device.
 
