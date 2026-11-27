@@ -12,11 +12,9 @@ QuipKite turns word choices into short, illustrated stories. Solo play uses fict
 
 ## Current release
 
-The itch.io browser preview is **0.42.1**. The publisher’s November 24 Steam check recorded **0.41.5** for Windows. [Play in the browser](https://zappytap.itch.io/quipkite-simulated-solo-preview) · [Windows game on Steam](https://store.steampowered.com/app/5345880/)
+The itch.io page lists **0.45.1** for the browser preview. The publisher’s November 26 check confirmed **0.45.1** on Steam’s public Windows branch. [Play in the browser](https://zappytap.itch.io/quipkite-simulated-solo-preview) · [Windows game on Steam](https://store.steampowered.com/app/5345880/)
 
-On November 24, 2026, a review compared the hosted **0.42.1 Solo preview** with the reviewed browser package. It accounted for all 68 served files and verified the expected itch.io launcher addition on the entry page.
-
-From Home, open **Choice Stories** to start or resume a journey. **Select latest save** finds the newest saved journey for the selected Solo mode. Open **Save Slots** to name a checkpoint or compare progress before loading. Slots stay on the device.
+On the **Flight Deck**, choose **Continue** to find your latest unfinished flight, or open **Save Slots** to choose a specific journey. You can try a new flight after reviewing your saved progress. In **Choice Stories**, Pip’s story offers Latin American Spanish and Brazilian Portuguese. Solo saves stay on the device.
 
 ## What it demonstrates
 
@@ -40,6 +38,8 @@ Open the browser preview and complete its age and community prompts. Choose Solo
 The image above is a genuine screenshot from an isolated run of the reviewed 0.36.0 browser package with fictional game state. It is not promotional artwork.
 
 ## Earlier browser verification
+
+On November 24, 2026, a review compared the hosted **0.42.1 Solo preview** with the reviewed browser package. It accounted for all 68 served files and verified the expected itch.io launcher addition on the entry page.
 
 The earlier reviewed artifact is **0.36.0**, metadata revision **privacy.1**. Its archive identity, file inventories and privacy boundaries were checked, followed by isolated desktop/mobile loading, packaged privacy navigation and Solo-play checks. Application code and game assets are unchanged by this metadata revision. On November 8, 2026, the public itch.io preview matched the reviewed package across all 64 served files. The entry page included only itch.io’s reviewed launcher in addition to the exact game HTML. The [machine-readable review record](PROJECT_METADATA.json) identifies the exact artifact and limits.
 
